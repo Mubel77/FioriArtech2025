@@ -1,0 +1,8 @@
+<mvc:XMLView 
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <shell>
+        <Title class="titleColor" text="sdf"></Title>
+        <BUtton text="Tocame" press= ".onClick"></Button>
+    </shell>
+</mvc:XMLView>
