@@ -1,0 +1,32 @@
+<mvc:View controllerName="claseaboutme.controller.ProjectBlock"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <VBox id="projectBlock" class="projectBlock">
+        <items>
+            <Title id="projectTitle" text="Enlaces Profesionales" level="H2" class="blockTitle"/>
+            <VBox id="linkContainer" class="linkContainer">
+                <items>
+                    <HBox id="githubLinkBox" class="linkItem">
+                        <items>
+                            <core:Icon id="githubIcon" src="sap-icon://source-code" class="linkIcon"/>
+                            <Link id="githubLink" href="{personal>/github}" text="GitHub - Ver Repositorio" target="_blank" class="profileLink"/>
+                        </items>
+                    </HBox>
+                    <HBox id="linkedinLinkBox" class="linkItem">
+                        <items>
+                            <core:Icon id="linkedinIcon" src="sap-icon://business-card" class="linkIcon"/>
+                            <Link id="linkedinLink" href="{personal>/linkedin}" text="LinkedIn - Conectar" target="_blank" class="profileLink"/>
+                        </items>
+                    </HBox>
+                    <HBox id="portfolioLinkBox" class="linkItem">
+                        <items>
+                            <core:Icon id="portfolioIcon" src="sap-icon://globe" class="linkIcon"/>
+                            <Link id="portfolioLink" href="{personal>/portfolio}" text="Portfolio - Ver Proyectos" target="_blank" class="profileLink"/>
+                        </items>
+                    </HBox>
+                </items>
+            </VBox>
+        </items>
+    </VBox>
+</mvc:View>

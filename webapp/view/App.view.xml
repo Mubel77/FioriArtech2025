@@ -3,5 +3,16 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <App id="app">
+        <pages>
+            <Page id="mainPage" showHeader="false" enableScrolling="true">
+                <content>
+                    <ScrollContainer id="mainScroll" height="100%" width="100%" vertical="true" horizontal="false">
+                        <mvc:XMLView id="aboutHeaderView" viewName="claseaboutme.view.AboutHeader"/>
+                        <mvc:XMLView id="personalBlockView" viewName="claseaboutme.view.PersonalBlock"/>
+                        <mvc:XMLView id="projectBlockView" viewName="claseaboutme.view.ProjectBlock"/>
+                    </ScrollContainer>
+                </content>
+            </Page>
+        </pages>
     </App>
 </mvc:View>

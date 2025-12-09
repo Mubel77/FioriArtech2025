@@ -1,0 +1,28 @@
+<mvc:View controllerName="claseaboutme.controller.AboutHeader"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <VBox id="profileContainer" class="profileSection">
+        <items>
+            <HBox id="profileHeader" alignItems="Center" class="profileHeader">
+                <items>
+                    <Image id="profileImg" src="{personal>/foto}" class="profileImage" width="140px" height="140px" alt="{personal>/nombre}"/>
+                    <VBox id="profileDetails" class="profileDetails">
+                        <items>
+                            <Title id="profileName" text="{personal>/nombre}" level="H1" class="profileName"/>
+                            <Title id="profileTitle" text="{personal>/titulo}" level="H3" class="profileTitle"/>
+                        </items>
+                    </VBox>
+                </items>
+            </HBox>
+            <Toolbar id="socialToolbar" class="socialToolbar">
+                <content>
+                    <Button id="emailBtn" text="{i18n>enviarCorreo}" press="onOpenEmail" type="Emphasized" icon="sap-icon://email" class="socialBtn"/>
+                    <Button id="githubBtn" text="{i18n>visitarGithub}" press="onOpenGithub" type="Default" icon="sap-icon://source-code" class="socialBtn"/>
+                    <Button id="linkedinBtn" text="{i18n>visitarLinkedIn}" press="onOpenLinkedIn" type="Default" icon="sap-icon://business-card" class="socialBtn"/>
+                    <Button id="portfolioBtn" text="{i18n>visitarPortfolio}" press="onOpenPortfolio" type="Default" icon="sap-icon://globe" class="socialBtn"/>
+                </content>
+            </Toolbar>
+        </items>
+    </VBox>
+</mvc:View>

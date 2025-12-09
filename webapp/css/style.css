@@ -1,1 +1,388 @@
-/* Enter your custom styles here */
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #3b82f6;
+  --accent-color: #10b981;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --background-light: #f9fafb;
+  --background-white: #ffffff;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+/* ============================================
+   PROFILE SECTION STYLES
+   ============================================ */
+
+.profileSection {
+  background: var(--background-white);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  animation: slideInDown 0.5s ease-out;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--background-light);
+}
+
+.profileImage {
+  border-radius: 12px;
+  border: 4px solid var(--secondary-color);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
+.profileDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.profileTitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* ============================================
+   SOCIAL TOOLBAR STYLES
+   ============================================ */
+
+.socialToolbar {
+  display: flex !important;
+  gap: 1rem;
+  padding: 1.5rem !important;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border-radius: 8px;
+  margin: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialBtn {
+  border-radius: 8px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: var(--shadow) !important;
+  min-width: 150px;
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.emailBtn {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+.emailBtn:hover {
+  background-color: #059669 !important;
+}
+
+.githubBtn {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.githubBtn:hover {
+  background-color: #555 !important;
+}
+
+.linkedinBtn {
+  background-color: #0077b5 !important;
+  color: white !important;
+}
+
+.linkedinBtn:hover {
+  background-color: #005885 !important;
+}
+
+.portfolioBtn {
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.portfolioBtn:hover {
+  background-color: #2563eb !important;
+}
+
+/* ============================================
+   CONTENT BLOCKS STYLES
+   ============================================ */
+
+.blockTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.personalBlock,
+.projectBlock {
+  background: var(--background-white);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem;
+  box-shadow: var(--shadow);
+  animation: slideInUp 0.5s ease-out;
+}
+
+.personalBlock {
+  animation-delay: 0.1s;
+}
+
+.projectBlock {
+  animation-delay: 0.2s;
+}
+
+/* ============================================
+   OBJECT IDENTIFIER STYLES
+   ============================================ */
+
+.sapMObjectIdentifier {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sapMObjectIdentifier:hover {
+  background-color: var(--background-light);
+  border-left-color: var(--accent-color);
+  border-radius: 4px;
+  padding-left: 1rem;
+}
+
+.sapMObjectIdentifierTitle {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+
+.sapMObjectIdentifierText {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+/* ============================================
+   LINK CONTAINER STYLES
+   ============================================ */
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--background-light);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.linkItem:hover {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+  border-left-color: var(--secondary-color);
+  transform: translateX(5px);
+  box-shadow: var(--shadow);
+}
+
+.linkIcon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.profileLink {
+  color: var(--secondary-color) !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.profileLink:hover {
+  color: var(--primary-color) !important;
+  text-decoration: underline;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .profileName {
+    font-size: 1.5rem;
+  }
+
+  .profileTitle {
+    font-size: 0.95rem;
+  }
+
+  .profileImage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .socialToolbar {
+    padding: 1rem !important;
+  }
+
+  .socialBtn {
+    min-width: 120px;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem;
+  }
+
+  .profileSection,
+  .personalBlock,
+  .projectBlock {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .blockTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileHeader {
+    padding-bottom: 1rem;
+  }
+
+  .profileName {
+    font-size: 1.25rem;
+  }
+
+  .profileImage {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .socialBtn {
+    min-width: 100%;
+  }
+
+  .socialToolbar {
+    flex-direction: column;
+  }
+
+  .linkItem {
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.sapUiSmallMargin {
+  margin: 0.5rem;
+}
+
+.sapUiContentPadding {
+  padding: 1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+  }
+
+  .profileSection,
+  .personalBlock,
+  .projectBlock {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

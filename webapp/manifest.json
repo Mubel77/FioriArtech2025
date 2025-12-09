@@ -69,22 +69,23 @@
         "type": "View",
         "viewType": "XML",
         "path": "claseaboutme.view",
-        "async": true,
-        "viewPath": "claseaboutme.view"
+        "async": true
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": ":?query:",
+          "name": "RouteMain",
+          "pattern": "",
           "target": [
-            "TargetView1"
+            "TargetMain"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
-          "id": "View1",
-          "name": "View1"
+        "TargetMain": {
+          "id": "mainPage",
+          "name": "App",
+          "viewLevel": 1,
+          "transition": "slide"
         }
       }
     },

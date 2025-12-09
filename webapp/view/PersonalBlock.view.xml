@@ -1,0 +1,14 @@
+<mvc:View controllerName="claseaboutme.controller.PersonalBlock"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <VBox id="personalBlock" class="personalBlock">
+        <items>
+            <Title id="personalTitle" text="Información de Contacto" level="H2" class="blockTitle"/>
+            <ObjectIdentifier id="emailId" title="{i18n>correo}:" text="{personal>/correo}"/>
+            <ObjectIdentifier id="githubId" title="{i18n>github}:" text="{personal>/github}"/>
+            <ObjectIdentifier id="linkedinId" title="{i18n>linkedin}:" text="{personal>/linkedin}"/>
+            <ObjectIdentifier id="portfolioId" title="{i18n>portfolio}:" text="{personal>/portfolio}"/>
+        </items>
+    </VBox>
+</mvc:View>
